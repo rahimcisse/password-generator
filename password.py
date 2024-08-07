@@ -1,7 +1,9 @@
 import tkinter as tk
+
+from tkinter import messagebox
+
 import string
 import random
-from tkinter import messagebox
 history=[]
 window = tk.Tk()
 window.title("Password Generator")
@@ -124,6 +126,7 @@ button_generate.pack(side="top")
 button_generate = tk.Button(window, bd=10, text="View Recent Password", command=copy)
 button_generate.pack(side="top")
 # Run the GUI
+
 window.mainloop()
 
 
